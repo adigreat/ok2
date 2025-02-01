@@ -1,0 +1,77 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: white;
+  }
+
+div{
+    height: 100vh;
+}
+
+.quote{
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 4vh;
+    width: 75%;
+}
+
+#rose, #propose, #chocolate, #teddy, #promise, #hug, #kiss, #valentines{
+    min-height: 100%;
+    position: relative;
+    opacity: 0.95;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#rose{
+    padding-top: 10%;
+    background-image: url("rose.jpg");
+    color: grey;
+}
+
+#propose{
+    padding-top: 10%;
+    background-image: url("propose.jpg");
+    color: black;
+}
+
+#chocolate{
+    padding-top: 10%;
+    background-image: url("chocolate.jpg");
+}
+
+#teddy{
+    padding-top: 10%;
+    background-image: url("teddy.jpg");
+    color: rgb(175, 126, 62);
+}
+
+#promise{
+    padding-top: 70%;
+    background-image: url("promise.jpg");
+    color: black;
+}
+
+#hug{
+    padding-top: 70%;
+    background-image: url("hug.jpg");
+}
+
+#kiss{
+    padding-top: 0%;
+    background-image: url("kiss.jpg");
+    color: black;
+}
+
+#valentines{
+    padding-top: 70%;
+    background-image: url("valentines.jpg");
+}
+
+#credits{
+    padding-top: 70%;
+    color: black;
+}

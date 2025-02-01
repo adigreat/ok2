@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Light&family=Lovers+Quarrel&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Ensure each section takes up the full viewport height */
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Love Light', cursive;
+            font-size: 2rem;
+            color: white;
+        }
+
+        /* Disable scrolling initially */
+        body.no-scroll {
+            overflow: hidden;
+        }
+
+        /* Background images for each section */
+        #rose { background: url('rose.jpg') no-repeat center center/cover; }
+        #propose { background: url('propose.jpg') no-repeat center center/cover; }
+        #chocolate { background: url('chocolate.jpg') no-repeat center center/cover; }
+        #teddy { background: url('teddy.jpg') no-repeat center center/cover; }
+        #promise { background: url('promise.jpg') no-repeat center center/cover; }
+        #hug { background: url('hug.jpg') no-repeat center center/cover; }
+        #kiss { background: url('kiss.jpg') no-repeat center center/cover; }
+        #valentines { background: url('valentines.jpg') no-repeat center center/cover; }
+        #credits { background: url('credits.jpg') no-repeat center center/cover; }
+    </style>
+    <title>Valentines Week 2022</title>
+</head>
+
+<body class="no-scroll">
+    <section id="rose">
+        <p class="quote">
+            Thought of maroon for loyality,<br> thought of red for commitment,<br> thought of white for
+            innocence.<br> Finally my heart said go with this and <br>start with sweetness, peace, and tenderness.
+        </p>
+    </section>
+    <section id="propose">
+        <p class="quote">
+            You're the only person<br> I want to be with<br>Today, Tomorrow and Forever.
+        </p>
+    </section>
+    <section id="chocolate">
+        <p class="quote">
+            Chocolate is food from the gods;<br> its energy, vitality, oneness.<br> Also, it’s pure love.<br> Here’s
+            some love from me to you!
+        </p>
+    </section>
+    <section id="teddy">
+        <p class="quote">
+            Give a hug to this softest teddy,<br> when I'm not there.<br> When you are with me,<br> you will never
+            miss my teddy!
+        </p>
+    </section>
+    <section id="promise">
+        <p class="quote">
+            As long as the sun shines bright,<br> the stars twinkle in the night,<br> I will only be yours
+            forever!!!<br>
+        </p>
+    </section>
+    <section id="hug">
+        <p class="quote">
+            There is always a shoulder for me to lean,<br>Where you are!<br>
+            A hug that can fill me with love is always there,<br>
+            Where you are!<br>
+            Everything I can dream of is there,<br>
+            Where you are!
+        </p>
+    </section>
+    <section id="kiss">
+        <p class="quote">
+            I have so many ways to prove my love for you,<br> but on this day,<br> I prefer to start everything with a kiss.
+        </p>
+    </section>
+    <section id="valentines">
+        <p class="quote">
+            Most people are slow to champion love<br> because they fear the transformation it brings into their lives.<br> And make no mistake about it:<br> love does take over and<br> transform the schemes and operations<br> of our egos in a very mighty way.
+        </p>
+    </section>
+    
+
+    <script>
+        // Get all sections
+        const sections = document.querySelectorAll('section');
+        let currentSectionIndex = 0;
+
+        // Function to unlock the next section
+        function unlockNextSection() {
+            if (currentSectionIndex < sections.length - 1) {
+                currentSectionIndex++;
+                // Scroll to the next section
+                sections[currentSectionIndex].scrollIntoView({ behavior: 'smooth' });
+                // Schedule the next unlock after 20 seconds
+                setTimeout(unlockNextSection, 5000);
+            } else {
+                // Enable full scrolling after all sections are unlocked
+                document.body.classList.remove('no-scroll');
+            }
+        }
+
+        // Start the process after 20 seconds
+        setTimeout(unlockNextSection, 20000);
+    </script>
+</body>
+
+</html>
